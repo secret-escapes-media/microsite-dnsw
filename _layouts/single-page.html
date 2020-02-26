@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include page/head.html %}
+
+  <body>
+
+    {% include components/tracking.html %}
+
+    {% include page/header.html %}
+
+    {% include page/banner.html %}
+
+    <div class="vpad--xxl">
+      <div class="container">
+        <div class="width width--xl text--center">
+          <p class="title title--sm">{{page.headline}}</p>
+          <div class="space--xs"></div>
+          <p class="text--xl">{{site.description}}</p>
+          {% if page.primary-cta %}
+            <div class="space--md">
+              <a href="{{page.primary-cta.link}}" class="btn btn--outline btn--outline-cyan">{{page.primary-cta.label}}</a>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% include nav/sections.html %}
+
+    <div class="section-spacing">
+
+      <!-- loops through section file for page content -->
+      {% for section in site.data.sections %}
+        {% assign interview = site.data.interviews[section.id] %}
+        <div id="{{section.id}}" class="js-nav-section vpad--xxxxxl bg__fixed">
+          <div class="bg__fixed-wrap">
+            <div class="bg__fixed-img" style="background-image: url('{{site.img}}/content/{{section.id}}/section-bg.jpg');">
+            </div>
+          </div>
+          <div class="container">
+            <div class="row row--valign-center row--gutters-lg row--xxl-6-6">
+              <div class="col">
+                <div class="content-spacing">
+                  <div class="title title--xl">{{section.title}}</div>
+                  <p class="text--xxl">{{section.description}}</p>
+                </div>
+                <div class="space--lg"></div>
+                <p class="text--center sub-title">Meet the winemaker</p>
+                <div class="space--xs"></div>
+                <div class="interview-card">
+                  <div class="row row--gutters-sm row--valign-center">
+                    <div class="col col--5">
+                      <div class="bg-img bg-img--circle" style="background-image: url('{{site.img}}/content/{{section.id}}/person.jpg')">
+                        <a class="bg-img__link js-open-modal" data-open-modal="interview-{{section.id}}" href="#0"></a>
+                      </div>
+                    </div>
+                    <div class="col col--7">
+                      <h3 class="title title--sm">{{interview.name}}</h3>
+                      <p class="text--xl">{{interview.bio}}</p>
+                      <div class="space--sm"></div>
+                      <a class="js-open-modal btn btn--sm btn--outline btn--outline-orange" data-open-modal="interview-{{section.id}}" href="#0">Read Interview</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="bg-img bg-img--1-1 bg-img--md-3-2 bg-img--xxl-1-1 video-thumbnail" style="background-image: url('{{site.img}}/img.jpg');">
+                  <a class="bg-img__link js-open-modal" data-open-modal="video-{{section.id}}" href="#0"></a>
+                  <div class="bg-img__bg-overlay"></div>
+                  <div class="bg-img__content">
+                    <img class="width--play-icon" src="{{site.img}}/icons/play.svg" alt="Play video icon">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+
+      <!-- Offers section -->
+      <div id="offers" class="js-nav-section">
+        <div class="space--xxxl"></div>
+        <div class="title title--xl text--center">Latest Offers</div>
+        {% include offer/all-offers.html %}
+        <div class="space--xxl"></div>
+        {% include page/promo-offers.html %}
+      </div>
+
+    </div>
+
+    {% include page/footer.html %}
+
+    {% include modal/sections.html %}
+
+  </body>
+
+</html>

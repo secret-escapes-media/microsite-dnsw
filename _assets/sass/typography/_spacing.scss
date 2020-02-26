@@ -7,7 +7,7 @@
   li + li { padding-top: $s-3; }
 
   // specific spacing for all titles, these should be adjusted once typefaces & content are added
-  p + .title { padding-top: $s5; }
+  p + .title { padding-top: $s3; }
   .title + p { padding-top: $s-3; }
   .title + .title { padding-top: 0; padding-bottom: $s-3; }
 

@@ -4,27 +4,29 @@
 
 // elements and classes
 var stickyNavClass     = '.js-sticky-nav';
-var stickyNavContainer = '.banner';
+var stickyNavContainer = '.js-sticky-nav-wrap';
 var stickyNavModifier  = 'is-stuck';
+var stickyNav          = $(stickyNavClass);
 
-function stickyNav(){
-
-  var scrollTop = $(document).scrollTop();
-  var nav       = $(stickyNavClass);
-  var navHeight = nav.outerHeight();
-  var distance  = $(stickyNavContainer).outerHeight() - navHeight;
-
-  if( scrollTop > distance ){
-    nav.addClass(stickyNavModifier);
+function watchStickyNav(){
+  if( $(document).scrollTop() > $(stickyNavContainer).position().top ){
+    stickyNav.addClass(stickyNavModifier);
   }else{
-    nav.removeClass(stickyNavModifier);
+    stickyNav.removeClass(stickyNavModifier);
   }
 }
 
-// runs on page load and scroll
-stickyNav();
-$(document).scroll(function(){ stickyNav(); });
+function resizeStickyNav(){
+  $(stickyNavContainer).css('height', stickyNav.outerHeight());
+}
 
+// init sticky nav
+resizeStickyNav();
+watchStickyNav();
+// change sticky nav state on page scroll
+$(document).scroll(debounce(watchStickyNav, 10));
+// change nav height on viewport resize
+$(window).resize(debounce(resizeStickyNav, 100));
 
 
 ////////////////////////////////////////////////////////////////////////////////

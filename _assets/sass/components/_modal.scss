@@ -116,6 +116,9 @@
       height: 100%;
     }
   }
+  // &--video {
+  //   video { width: 100%; }
+  // }
   @include bp($md) {
     margin-left: $icon-size;
     margin-right: $icon-size;

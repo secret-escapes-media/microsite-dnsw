@@ -1,1 +1,17 @@
 // general styles for the project that wouldn't be a reuseable component
+
+.width--play-icon { max-width: 140px; }
+
+.video-thumbnail {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.interview-card {
+  padding: $s2 $s3;
+  background-color: rgba($white, .75);
+  border-radius: 10px;
+  box-shadow: 0px 8px 44px 0px rgba($black, .12);
+  &__image {}
+  &__text {}
+}

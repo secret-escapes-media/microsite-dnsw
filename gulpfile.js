@@ -22,7 +22,7 @@ function cleanAssets() {
 
 // start browserSync local server and show under site subdirectory
 function browserSyncServe() {
-  const baseurl = '/uk/2020/template';
+  const baseurl = '/uk/2020/new-south-wales-wine';
   browserSync.init({
     baseDir: '_site/',
     ui: false,
@@ -78,9 +78,10 @@ function buildJsMain(cb) {
   // --------------------
 
     // plugins
+    './_assets/js/_components/modernizr.js',
     './node_modules/jquery/dist/jquery.min.js',
     './node_modules/jquery-countdown/dist/jquery.countdown.min.js',
-    // './node_modules/waypoints/lib/jquery.waypoints.min.js',
+    './node_modules/waypoints/lib/jquery.waypoints.min.js',
 
     // custom js - with on doc ready wrapper
     './_assets/js/_components/on-ready/start.js',
@@ -90,11 +91,11 @@ function buildJsMain(cb) {
     './_assets/js/_components/offer-countdown.js',
     './_assets/js/_components/modal.js',
     './_assets/js/_components/modal-nav.js',
-    // './_assets/js/_components/sticky-nav.js',
-    './_assets/js/_components/form/functions.js',
-    './_assets/js/_components/form/validation.js',
-    './_assets/js/_components/competition.js',
-    './_assets/js/_components/simple-form.js',
+    './_assets/js/_components/sticky-nav.js',
+    // './_assets/js/_components/form/functions.js',
+    // './_assets/js/_components/form/validation.js',
+    // './_assets/js/_components/competition.js',
+    // './_assets/js/_components/simple-form.js',
 
     // custom js for project
     './_assets/js/main.js',
