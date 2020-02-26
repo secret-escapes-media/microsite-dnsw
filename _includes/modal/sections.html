@@ -13,7 +13,7 @@
       <div class="modal modal--standard is-closed" data-modal-id="interview-{{section.id}}">
         <div class="js-close-modal modal__close"></div>
         <div class="modal__content">
-          <div class="content-spacing width width--xl">
+          <div class="width width--xl">
             <div class="row row--valign-center">
               <div class="col col--4">
                 <div class="bg-img bg-img--circle" style="background-image: url('{{site.img}}/content/{{section.id}}/person.jpg')"></div>
@@ -24,15 +24,17 @@
               </div>
             </div>
             <hr>
-            {% for question in interview.content %}
-              {% for text in question %}
-                {% if forloop.first %}
-                  <h4 class="title title--xxxs">{{text}}</h4>
-                {% else %}
-                  <p>{{text}}</p>
-                {% endif %}
+            <div class="content-spacing">
+              {% for question in interview.content %}
+                {% for text in question %}
+                  {% if forloop.first %}
+                    <h4 class="title title--xxxs">{{text}}</h4>
+                  {% else %}
+                    <p>{{text}}</p>
+                  {% endif %}
+                {% endfor %}
               {% endfor %}
-            {% endfor %}
+            </div>
           </div>
         </div>
       </div>
