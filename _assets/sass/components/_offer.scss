@@ -25,7 +25,7 @@ $offer-max-width: 600px;
     @include transition;
     &:hover {
       opacity: 1;
-      background-color: rgba($grey-darkest,.33);
+      background-color: rgba($grey-darkest,.5);
       color: $white;
       .touch & { opacity: 0; }
     }
@@ -76,7 +76,7 @@ $offer-max-width: 600px;
     min-width: $circle-height;
     min-height: $circle-height;
     margin-left: $s-3;
-    border: 1px solid $orange;
+    border: 1px solid $dial-grey;
     border-radius: $circle-height;
     background-repeat: no-repeat;
     background-image: url('../img/icons/arrow-right-orange.svg');
@@ -101,12 +101,12 @@ $offer-max-width: 600px;
       width: $circle-height;
       height: $circle-height;
       margin-top: $s-5;
-      color: #fff;
+      color: $dial-red;
       font-weight: 600;
       letter-spacing: 0;
-      line-height: $circle-height;
-      background-color: $orange;
+      line-height: ($circle-height - .2);
       border-radius: $circle-height;
+      border: 1px solid $dial-grey;
     }
     &-label {
       max-width: 100px;
@@ -140,7 +140,7 @@ $offer-max-width: 600px;
     > div + div { padding-top: $s-10; }
   }
   &__price {
-    color: $orange;
+    color: $dial-red;
     font-size: $s2;
     font-weight: 600;
     line-height: 1;

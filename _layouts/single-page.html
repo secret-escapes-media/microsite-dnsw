@@ -27,7 +27,7 @@
     </div>
     {% include nav/sections.html %}
 
-    <div class="section-spacing">
+    <div>
 
       <!-- loops through section file for page content -->
       {% for section in site.data.sections %}
@@ -41,9 +41,14 @@
             <div class="row row--valign-center row--gutters-lg row--xxl-6-6">
               <div class="col">
                 <div class="content-spacing">
-                  <div class="title title--xl">{{section.title}}</div>
+                  <div class="title title--xxl">{{section.title}}</div>
                   <p class="text--xxl">{{section.description}}</p>
                 </div>
+                <div class="space--md"></div>
+                <div class="distance">
+                   <img src="{{site.img}}/icons/distance-car.svg" alt="Car icon"> {{section.drive-time}} drive from Sydney
+                </div>
+
                 <div class="space--lg"></div>
                 <p class="text--center sub-title">Meet the winemaker</p>
                 <div class="space--xs"></div>
@@ -57,14 +62,14 @@
                     <div class="col col--7">
                       <h3 class="title title--sm">{{interview.name}}</h3>
                       <p class="text--xl">{{interview.bio}}</p>
-                      <div class="space--sm"></div>
+                      <div class="space--xs"></div>
                       <a class="js-open-modal btn btn--sm btn--cyan" data-open-modal="interview-{{section.id}}" href="#0">Read Interview</a>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col">
-                <div class="bg-img bg-img--1-1 bg-img--md-3-2 bg-img--xxl-1-1 video-thumbnail" style="background-image: url('{{site.img}}/img.jpg');">
+                <div class="bg-img bg-img--1-1 bg-img--md-3-2 bg-img--xxl-1-1 video-thumbnail" style="background-image: url('{{site.img}}/content/{{section.id}}/video.jpg');">
                   <a class="bg-img__link js-open-modal" data-open-modal="video-{{section.id}}" href="#0"></a>
                   <div class="bg-img__bg-overlay"></div>
                   <div class="bg-img__content">
@@ -79,8 +84,13 @@
 
       <!-- Offers section -->
       <div id="offers" class="js-nav-section">
-        <div class="space--xxxl"></div>
-        <div class="title title--xl text--center">Latest Offers</div>
+        <div class="space--xxxxl"></div>
+        <div class="container text--center text--xl">
+          <div class="title title--xxl">Latest Offers</div>
+          <div class="subtitle-dialaflight"><span class="title">From</span> <img src="{{site.img}}/logo/dial-a-flight-color.svg" alt="DialAFlight Logo"></div>
+          <p class="width width--lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea eos quisquam magnam ab temporibus, ipsa, assumenda quae, beatae itaque nemo recusandae modi facilis earum! Voluptas accusantium explicabo dicta recusandae harum?</p>
+        </div>
+        <div class="space--md"></div>
         {% include offer/all-offers.html %}
         <div class="space--xxl"></div>
         {% include page/promo-offers.html %}

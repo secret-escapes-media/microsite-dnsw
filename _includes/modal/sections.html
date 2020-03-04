@@ -23,16 +23,17 @@
                 <p class="text--xxl">{{interview.bio}}</p>
               </div>
             </div>
-            <hr>
+            <div class="space--lg"></div>
             <div class="content-spacing">
-              {% for question in interview.content %}
-                {% for text in question %}
-                  {% if forloop.first %}
-                    <h4 class="title title--xxxs">{{text}}</h4>
-                  {% else %}
-                    <p>{{text}}</p>
-                  {% endif %}
-                {% endfor %}
+              {% for item in interview.content %}
+                {% if item.image %}
+                  <div class="vpad--md">
+                    <div class="bg-img bg-img--4-3 bg-img--lg-3-2" style="background-image: url('{{site.img}}/content/{{section.id}}/{{item.image}}')"></div>
+                  </div>
+                {% endif %}
+                {% if item.paragraph %}
+                  <p class="text--xxl">{{item.paragraph | liquify}}</p>
+                {% endif %}
               {% endfor %}
             </div>
           </div>
@@ -41,7 +42,7 @@
       <!-- section video -->
       <div class="modal modal--video is-closed" data-modal-id="video-{{section.id}}">
         <div class="js-close-modal modal__close"></div>
-        <video class="js-modal-video" src="{{site.baseurl}}/_assets/video/{{section.id}}.mp4" controls poster="{{site.img}}/content/{{section.id}}/video.jpg" controlsList="nodownload"></video>
+        <iframe src="https://player.vimeo.com/video/{{section.video.id}}" width="800" height="450" frameborder="0" allowfullscreen></iframe>
       </div>
     {% endfor %}
 

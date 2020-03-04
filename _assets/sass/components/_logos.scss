@@ -16,8 +16,16 @@
     }
   }
   &--partner { // max-width for this is about 150x46px
-    max-width: 130px;
+    max-width: 115px;
     transform: translateY(-2px);
-    &-sm { max-width: 115px; }
+    &-sm {
+      max-width: 100px;
+      transform: translateY(-1px);
+    }
+  }
+  &--dialaflight { // max-width for this is about 150x46px
+    max-width: 135px;
+    transform: translateY(-3px);
+    &-sm { max-width: 110px; }
   }
 }

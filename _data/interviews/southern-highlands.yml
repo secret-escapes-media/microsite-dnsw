@@ -2,21 +2,10 @@ name: Mark Bourne
 bio: Winemaker at Cuttaway Hill Wines
 
 content:
-  -
-    - Tell us about how you ended up in the Southern Highlands...
-    - I’ve been in the Southern Highlands for 24 years, and at the moment I’m the longest-serving wine-maker in the region. The landscape is what drew me here originally; the Southern Highlands is such a beautiful place to live, it has a fantastic climate; crisp fresh mornings, cool winters and gentle warm summer days.
-  -
-    - When you’re not busy at the vineyard, what would a typical bit of downtime look like in the region? What would you get up to?
-    - The perfect day in the Southern Highlands includes a few wineries, some beautiful restaurants, some local produce and enjoying the vista and the landscape that the Southern Highlands is renowned for.
-  -
-    - What would you recommend a new visitor to the region to not miss? What are the absolute must-dos?
-    - Some of the iconic places to visit in the Southern Highlands (outside of Cuttaway Hill and some of the other wineries!) are the International Bradman Museum in Bowral, iconic national parks where you can find Fitzroy Falls and Bundanoon and of course, our world-class restaurants.
-  -
-    - Any hidden gems that really get under the skin of the region?
-    - One of the hidden gems of the Southern Highlands is the natural environment, despite being a short drive from Sydney, but you can thoroughly immerse yourself in nature, enjoying national parks and farm-stays.
-  -
-    - Are there any restaurants or foodie things you could recommend?
-    - There are some international award-winning restaurants in the Southern Highlands, some of those include Biota Dining, Eschalot and the Birch Restaurant, alongside family-operated cafes that focus on local produce and give everyone a true taste of what the Southern Highlands is about.
-  -
-    - Finally, what other region in New South Wales would you recommend to a wine lover and why?
-    - New South Wales has a diversity of climates and regions; you can transition from big juicy reds down in the Hilltops region of Canberra, to classic Semillons and Shiraz varieties in the Hunter Valley, to the high altitude regions across New South Wales which offer sparkling wines and crisp Rieslings, then to the delicious Pinots in Orange and the Southern Highlands.
+  - paragraph: I’ve been in the Southern Highlands for 24 years, and at the moment I’m the longest-serving wine-maker in the region. The landscape is what drew me here originally; the Southern Highlands is such a beautiful place to live, it has a fantastic climate; crisp fresh mornings, cool winters and gentle warm summer days.
+  - image: scenery.jpg
+  - paragraph: The perfect day in the Southern Highlands includes a few wineries, some beautiful restaurants, some local produce and enjoying the vista and the landscape that the Southern Highlands is renowned for. Some of the iconic places to visit in the Southern Highlands (outside of Cuttaway Hill and some of the other wineries!) are the International Bradman Museum in Bowral, iconic national parks where you can find Fitzroy Falls and Bundanoon and of course, our world-class restaurants.
+  - paragraph: The perfect day in the Southern Highlands includes a few wineries, some beautiful restaurants, some local produce and enjoying the vista and the landscape that the Southern Highlands is renowned for.  Some of the iconic places to visit in the Southern Highlands (outside of Cuttaway Hill and some of the other wineries!) are the International Bradman Museum in Bowral, iconic national parks where you can find Fitzroy Falls and Bundanoon and of course, our world-class restaurants.
+  - image: lake.jpg
+  - paragraph: There are some international award-winning restaurants in the Southern Highlands too, including Biota Dining, Eschalot and the Birch Restaurant, alongside family-operated cafes that focus on local produce and give everyone a true taste of what the Southern Highlands is about.
+  - paragraph: New South Wales has a diversity of climates and regions; you can transition from big juicy reds down in the Hilltops region of <a class="js-close-modal link link--underlined link--color" href="{{site.baseurl}}/#canberra-district">Canberra</a>, to classic Semillons and Shiraz varieties in the <a class="js-close-modal link link--underlined link--color" href="{{site.baseurl}}/#hunter-valley">Hunter Valley</a>, to the high altitude regions across New South Wales which offer sparkling wines and crisp Rieslings, then to the delicious Pinots in <a class="js-close-modal link link--underlined link--color" href="{{site.baseurl}}/#orange">Orange</a> and the Southern Highlands.

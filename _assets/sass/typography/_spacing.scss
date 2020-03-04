@@ -1,9 +1,9 @@
 .content-spacing {
 
   // general content styles
-  * + p,
-  * + ul,
-  * + ol  { padding-top: $s-1; }
+  p + p,
+  p + ul,
+  p + ol  { padding-top: $s-1; }
   li + li { padding-top: $s-3; }
 
   // specific spacing for all titles, these should be adjusted once typefaces & content are added

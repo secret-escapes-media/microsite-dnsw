@@ -2,27 +2,12 @@ name: Rosie Cupitt
 bio: Founder, Cupitt’s Winery
 
 content:
-  -
-    - Tell us about how you ended up in Shoalhaven...
-    - We’ve had a family house in the district since 1983 and moved here permanently in 2000. The coastal lifestyle and the beauty of the beaches and the countryside are what we enjoy. We have three of our children working with us which makes it very special having a family business. We now also have two grandchildren who we see every day. It’s a perfect way to work and live.
-  -
-    - When you’re not busy at the vineyard, what would a typical bit of downtime look like in the region? What would you get up to?
-    - We are very keen swimmers and swim every morning in the ocean in front of our house. A great start to the day. There are many good restaurants, producers and providores so we go out for meals and do lots of cooking on the deck with the local seafood and produce. The weather is perfectly suited to outdoor entertainment.
-  -
-    - What would you recommend a new visitor to the region to not miss? What are the absolute must-dos?
-    - The beaches are absolutely stunning and so many to choose from. There are great surf breaks but also lovely places for a relaxing dip, or stand up paddleboarding is fun on the lakes in the district. Mollymook has one of the best golf courses on the South Coast for those who love to play and the Budawang Ranges are also right on our doorstep with many wonderful bush walks. Everyone who is able to, must climb Pigeon House Mountain….the view is amazing. We have a lot of fabulous places to dine locally and it is regarded as a food hub on the coast. Rick Stein at Mollymook, Small Town in Milton and of course our own restaurant at Cupitt’s Estate set above the vineyard with views over Lake Burrill and the ranges are just some places to head for.
-  -
-    - Any hidden gems that really get under the skin of the region?
-    - Isolated beaches where you can be the only one walking on the sand. Aboriginal middens are found in some of the caves along these beaches and you can see evidence of activity that has been there for centuries. One thing I’m proud of is the friendliness of the locals and their ability to help you discover our wonderful district.
-  -
-    - Are there any restaurants or foodie things you could recommend?
-    - Many restaurants stand out. Cupitt’s Estate offers fine food and al fresco casual dining in a stunning farm setting with live music every Sunday. Rick Stein and Tallwood Eatery at Mollymook, Small Town in Milton are great for lunch and dinner and Milkhaus in the hills behind Milton is perfect for breakfast. You can stay for a few days and have the choice of many good cafes and restaurants… Try them all if you can!
-  -
-    - Any particularly special outdoor adventures that people should know about?
-    - The Budawangs and areas around Kings Point have good safe walking trails to follow and for the fit a hike up Pigeon House Mountain is a perfect reward with one of the best views on the South Coast. Stand Up Paddle Boarding is a popular sport and there are coaches who can supply the boards and teach you the skills. Of course, the region has some of the best surf beaches in NSW so the keen surfers have  choices of beaches, depending on the prevailing winds on the day. Golfers are well catered for with a championship 18 hole course and a smaller 9 hole beachside course as well.
-  -
-    - What are some of your favourite other winemakers in the region?
-    - Coolangatta Estate at Shoalhaven Heads makes some of the best wines in Australia and specialises in Semillon. Their Tempranillo is also delicious, as is the Tannat.
-  -
-    - Finally, what other region in New South Wales would you recommend to a wine lover and why?
-    - Murrumbateman/Bungendore near Canberra has a lot of very good wineries. As a cool-climate region there are good Riesling, Chardonnay, Pinot Noir and Shiraz, as well as some terrific alternate varieties. Sangiovese, Marsanne, Roussane, Viognier, Gruner Veltliner are just a few varieties made well in the district. It’s my “go to” winery region.
+  - paragraph: We’ve had a family house in the district since 1983 and moved here permanently in 2000. The coastal lifestyle and the beauty of the beaches and the countryside are what we enjoy. We have three of our children working with us – it’s very special having a family business. We now also have two grandchildren who we see every day; it’s a perfect way to work and live.
+  - paragraph: We are very keen swimmers and swim every morning in the ocean in front of our house. It’s a great start to the day. There are many good restaurants, producers and providores, so we go out for meals and do lots of cooking on the deck with the local seafood and produce. The weather is perfectly suited to outdoor entertainment.
+  - image: scenery.jpg
+  - paragraph: The beaches are absolutely stunning and there are so many to choose from. There are great surf breaks but also lovely places for a relaxing dip, or try stand-up paddleboarding on the lakes in the district. Mollymook has one of the best golf courses on the South Coast for those who love to play and the Budawang Ranges are also right on our doorstep with many wonderful bush walks. Everyone who is able to must climb Pigeon House Mountain. The view is amazing.
+  - paragraph: A few hidden gems? There are plenty of isolated beaches where you can be the only one walking on the sand. Aboriginal middens are found in some of the caves along these beaches and you can see evidence of activity that has been there for centuries. One thing I’m proud of is the friendliness of the locals and their ability to help you discover our wonderful district.
+  - image: view.jpg
+  - paragraph: We have a lot of fabulous places to dine locally and it is regarded as a food hub on the coast. Many restaurants stand out. Cupitt’s Estate offers fine food and al fresco casual dining in a stunning farm setting with live music every Sunday. Rick Stein and Tallwood Eatery at Mollymook, Small Town in Milton are great for lunch and dinner and Milkhaus in the hills behind Milton is perfect for breakfast. You can stay for a few days and have the choice of many good cafes and restaurants… Try them all if you can!
+  - paragraph: As for other wine regions in New South Wales, here are my favourites. Coolangatta Estate at Shoalhaven Heads makes some of the best wines in Australia and specialises in Semillon. Their Tempranillo is also delicious, as is the Tannat.
+  - paragraph: Murrumbateman/Bungendore near <a class="js-close-modal link link--underlined link--color" href="{{site.baseurl}}/#canberra-district">Canberra</a> has a lot of very good wineries. As a cool-climate region there are good Riesling, Chardonnay, Pinot Noir and Shiraz, as well as some terrific alternate varieties. Sangiovese, Marsanne, Roussanne, Viognier, Gruner Veltliner are just a few varieties made well in the district. It’s my “go-to” winery region.

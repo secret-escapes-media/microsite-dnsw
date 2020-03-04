@@ -48,7 +48,7 @@ $logo-bp: 650px;
   background-color: rgba($black,.75);
 
   // spacing for double logos in core nav
-  .logo + .logo { margin-left: $s0; }
+  .logo + .logo { margin-left: $s2; }
 
   @include bp(md){
     padding-left: $core-nav-padding;

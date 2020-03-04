@@ -18,6 +18,7 @@ a[href]:not([class]) {
 .link {
   &:hover { text-decoration: underline; }
   &--underlined { text-decoration: underline; }
+  &--color { color: $d-cyan; }
 }
 
 ol {
