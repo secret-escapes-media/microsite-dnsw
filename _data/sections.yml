@@ -1,7 +1,7 @@
 - id: hunter-valley
   title: Hunter Valley
   description: This classic New South Wales wine region offers sprawling vineyards set in gorgeous countryside, each cultivating fine tipples steeped in heritage. The oldest wine-producing region in Australia, the Hunter Valley is best known for its award-winning sémillon and shiraz. Alight for cellar-door tastings, boutique beer trails, fine restaurants and exquisite artisan chocolates.
-  drive-time: 3 hour
+  drive-time: 2 hour
   video:
     id: 393563856
     url: https://vimeo.com/393563856/678600c9c0
@@ -10,6 +10,7 @@
   title: Orange
   description: Orange has established itself as an enviable food and wine hotspot, where volcanic soils offer all manner of rich harvests. Acclaimed restaurants have been opening all across town, taking advantage of the flow of in-the-know foodies coming to sample the local wine. Alight at Orange F.O.O.D. Week or Winefest for a great introduction to all things Orange foodie.
   drive-time: 3 hour
+  flight-time: 40 minute
   video:
     id: #
     url: #

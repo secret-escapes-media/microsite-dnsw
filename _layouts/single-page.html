@@ -45,10 +45,39 @@
                   <p class="text--xxl">{{section.description}}</p>
                 </div>
                 <div class="space--md"></div>
-                <div class="distance">
-                   <img src="{{site.img}}/icons/distance-car.svg" alt="Car icon"> {{section.drive-time}} drive from Sydney
-                </div>
-
+                {% if section.flight-time %}
+                  <div class="row row--6-6 row--gutters-sm">
+                    <div class="col">
+                      <div class="distance">
+                        <div class="distance__icon">
+                          <img src="{{site.img}}/icons/distance-plane.svg" alt="Airplane icon">
+                        </div>
+                        <div class="distance__text">
+                        {{section.flight-time}} flight from Sydney
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="distance">
+                        <div class="distance__icon">
+                          <img src="{{site.img}}/icons/distance-car.svg" alt="Car icon">
+                        </div>
+                        <div class="distance__text">
+                        {{section.drive-time}} drive from Sydney
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                {% else %}
+                  <div class="distance">
+                    <div class="distance__icon">
+                      <img src="{{site.img}}/icons/distance-car.svg" alt="Car icon">
+                    </div>
+                    <div class="distance__text">
+                    {{section.drive-time}} drive from Sydney
+                    </div>
+                  </div>
+                {% endif %}
                 <div class="space--lg"></div>
                 <p class="text--center sub-title">Meet the winemaker</p>
                 <div class="space--xs"></div>

@@ -33,21 +33,24 @@
 }
 
 .distance {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: $s0;
-  font-family: $font-title-01;
-  font-weight: 600;
-  line-height: 1.4;
-  letter-spacing: .125rem;
-  text-transform: uppercase;
-  font-size: .85rem;
-  text-align: center;
-  color: $d-cyan;
   background-color: rgba(#eaf7f9, .66);
   border-radius: 99999rem;
-  > img {
+  &__icon {
+    margin-right: .66rem;
     display: inline-block;
-    width: initial;
-    margin-right: .33rem;
     transform: translateY(-2px);
+  }
+  &__text {
+    font-family: $font-title-01;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    font-size: .85rem;
+    color: $d-cyan;
   }
 }

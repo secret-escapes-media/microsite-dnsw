@@ -1,49 +1,39 @@
-- title: Spectacular Oslo & Bergen break with optional fjord tour
-  id: spectacular-oslo-bergen-break-with-optional-fjord-tour
-  location: Scandic St. Olavs plass & Clarion Hotel Admiral, Norway
-  description: A fantastic four-night trip to Norway's Oslo and Bergen, with one of the world's most scenic train journeys between the two cities - including flights and an optional fjord tour
-  price: 459
-  price-description: per person for 4 nights
-  saved: 37
-  expires: 2020/04/14
-  link: https://www.secretescapes.com/spectacular-oslo-and-bergen-break-with-optional-fjord-tour-scandic-st-olavs-plass-and-clarion-hotel-admiral-norway-2/sale?gce_urg=0&utm_source=SE&utm_campaign=7_Norway_201703&utm_medium=Hub
+- title: Luxury Food & Wine in Sydney & NSW - self&nbsp;drive
+  id: luxury-food-wine-in-sydney-nsw-self-drive
+  location: Sydney
+  description: Embark on our tailor-made tour through Sydney and New South Wales and sample the very best food and wine in pure luxury. Begin in Sydney Harbour with a chance to explore this magnificent city, take a tour of the Sydney Opera House with dinner included. Then, pick up your car and head for a full day guided tour of the Southern Highlands and the chance to discover the produce and the history of this area. Then a stop at the Hunter Valley presents the rare opportunity to access one of Australia's most iconic vineyards at Brokenwood and an unforgettable hot air balloon flight.
+  price: 3999
+  price-description: per person for 9 nights
+  extra: £150pp off
+  dates: September 2020
+  link: https://www.dialaflight.com/flights/australia/sydney/?nav=true
 
-- title: Farris Bad
-  id: farris-bad
-  location: Larvik, Norway
-  description: Upscale beachfront stay at the first Nordic balneological health resort, with a supersized spa
-  price: 214
-  price-description: per room per night
-  saved: 33
-  expires: 2020/04/20
-  link: https://www.secretescapes.com/farris-bad-larvik-norway/sale?gce_urg=1&gce_scp=0&utm_source=SE&utm_medium=Hub&utm_campaign=12_Norway_201703
+- title: New South Wales Wine Tour - self&nbsp;drive
+  id: new-south-wales-wine-tour-self-drive
+  location: Sydney
+  description: A gastronome’s delight, you can raise a glass or two on this wonderful Australian journey through the wine regions of New South Wales, during which you will visit lots of famous wineries and get to sample their finest produce as well as the regions' epicurean delights. On this self drive trip, which begins and ends in the stunning city of Sydney, you stay in luxurious accommodation and have plenty of time for sightseeing between all those memorable vineyard visits.
+  price: 2099
+  price-description: per person for 9 nights
+  extra: FREE Wine Tour
+  dates: September 2020
+  link: https://www.dialaflight.com/flights/australia/sydney/?nav=true
 
-- title: First Hotel Marin
-  id: first-hotel-marin
-  location: Bergen, Norway
-  description: A unique stay in the centre of picturesque Bergen, just a stone's throw from the harbour
-  price: 48
-  price-description: per room per night
-  saved: 43
-  expires: 2020/04/20
-  link: https://www.secretescapes.com/first-hotel-marin-bergen-norway/sale?gce_scp=1&utm_source=SE&utm_medium=Hub&utm_campaign=13_Norway_201704
+- title: Sydney, Wine & Wildlife - self&nbsp;drive
+  id: sydney-wine-wildlife-self-drive
+  location: Sydney
+  description: See Sydney's best bits, the incredible Blue Mountains, epic Hunter Valley and wonderful Port Stephens with this great self-drive journey. From the fabulous wines of the Hunter Valley region, to the mystical nature of the Blue Mountains this is more than just a culture stop and will be one to live long in the memory!
+  price: 1725
+  price-description: per person for 7 nights
+  extra: Save 10%
+  dates: 11th October - 31th November 2020
+  link: https://www.dialaflight.com/flights/australia/sydney/?nav=true
 
-- title: Magic Hotel
-  id: magic-hotel
-  location: Bergen, Norway
-  description: A brand-new hip hotel in the centre of Bergen, designed by a top New York designer
-  price: 73
-  price-description: per room per night
-  saved: 55
-  expires: 2020/04/20
-  link: https://www.secretescapes.com/magic-hotel-bergen-norway/sale?gce_hpf=1&utm_source=SE&utm_medium=Hub&utm_campaign=14_Norway_201704
-
-- title: Sola Strand Hotel
-  id: sola-strand-hotel
-  location: Sola, Norway
-  description: Discover one of the world's sixth best beaches on Norway's gorgeous coast, with breakfast and more
-  price: 79
-  price-description: per room per night
-  saved: 47
-  expires: 2020/04/20
-  link: https://www.secretescapes.com/sola-strand-hotel-sola-norway/sale?gce_hpf=1&utm_source=SE&utm_medium=Hub&utm_campaign=15_Norway_201704
+- title: Sydney and the Oyster Coast
+  id: sydney-and-the-oyster-coast
+  location: Sydney
+  description: Drive yourself around the best bits of Sydney and New South Wales with this tour that affords you plenty of time to explore for yourself. Along the way you'll enjoy a dolphin cruise at Jervis Bay, sample a host of fine food options and spend a free day at Kiama - with the perfect chance to visit the local wineries and enjoy a tipple.
+  price: 1449
+  price-description: per person for 8 nights
+  extra: Save 10%
+  dates: 1st September - 12th October 2020
+  link: https://www.dialaflight.com/flights/australia/sydney/?nav=true

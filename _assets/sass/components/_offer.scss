@@ -140,6 +140,12 @@ $offer-max-width: 600px;
     > div + div { padding-top: $s-10; }
   }
   &__price {
+    color: $dial-grey;
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+  &__extra {
+    margin-bottom: $s-6;
     color: $dial-red;
     font-size: $s2;
     font-weight: 600;
