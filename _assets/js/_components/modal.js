@@ -1,6 +1,7 @@
-var modal          = $('.js-modal'),
-    modalLaunchBtn = $('.js-open-modal'),
-    modalCloseBtn  = $('.js-close-modal');
+var modal          = $('.js-modal');
+var modalLaunchBtn = $('.js-open-modal');
+var modalCloseBtn  = $('.js-close-modal');
+var vimeoPlayer;
 
 // opens modal
 function modalOpen(event, modalId){
@@ -21,37 +22,45 @@ function modalOpen(event, modalId){
   // disable scrolling on background content (doesn't work iOS)
   $('body').addClass('disable-scroll');
 
-  // builds youtube video if needed
-  if (activeModal.data('youtube-id')) {
-    // get youtube id and target div
-    var video     = activeModal.find('.js-modal-video'),
-        youtubeId = activeModal.data('youtube-id');
-    // insert the code into the target with the id and autoplay
-    video.html('<div class="video__wrap"><iframe class="video" src="https://www.youtube.com/embed/' + youtubeId + '?rel=0&amp;showinfo=0&autoplay=1" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>');
+  // create video if its a vimeo video modal
+  if ($('#' + activeModalId).length > 0) {
+    vimeoPlayer = new Vimeo.Player(activeModalId);
   }
 
   // reveal the specific modal content
   activeModal.removeClass('is-closed').addClass('is-open');
+  modal.removeClass('is-closed').addClass('is-open');
 
-  // open modal
-  modal.fadeIn('250', function(){
-    $(this).removeClass('is-closed').addClass('is-open');
-  });
 }
 
 // closes modal
 function modalClose(event){
   event.preventDefault();
+
+  // get active modal ID and check if video modal
+  var activeModal = $('.modal__wrap.is-open');
+  var activeModalId = activeModal.data('modal-id');
+  var isVideoModal = $('#' + activeModalId).length > 0;
+
   // enable scrolling
   $('body').removeClass('disable-scroll');
-  // close modal with fade
-  $('.modal__bg.is-open').fadeOut('250', function(){
-    // close modal and active modal content
-    $(this).removeClass('is-open').addClass('is-closed');
-    $('.modal.is-open').removeClass('is-open').addClass('is-closed');
-    // kill everything inside of video if its there
-    $('.js-modal-video').empty();
+
+  // pause video before transition
+  if (isVideoModal) vimeoPlayer.pause();
+
+  // set event listener after transition
+  activeModal.on('transitionend', function(){
+    modal.scrollTop(0); // reset scroll position
+    if (isVideoModal) {
+      vimeoPlayer.destroy(); // remove video player
+      vimeoPlayer = null; // reset variable for new players
+    }
+    $(this).off(); // remove this event listener
   });
+
+  // hide modal
+  modal.addClass('is-closed').removeClass('is-open');
+  activeModal.addClass('is-closed').removeClass('is-open');
 }
 
 

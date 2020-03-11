@@ -3,14 +3,13 @@
   creates a series modal so user can nav between each poi in the current section
   will also load in normal modals that appear in /data/modals.yml
 -->
-
 <div class="js-modal modal__bg is-closed">
-  <div class="modal__wrap">
 
-    {% for section in site.data.sections %}
-      {% assign interview = site.data.interviews[section.id] %}
-      <!-- section interview -->
-      <div class="modal modal--standard is-closed" data-modal-id="interview-{{section.id}}">
+  {% for section in site.data.sections %}
+    {% assign interview = site.data.interviews[section.id] %}
+    <!-- section interview -->
+    <div class="modal__wrap is-closed" data-modal-id="interview-{{section.id}}">
+      <div class="modal modal--standard">
         <div class="js-close-modal modal__close"></div>
         <div class="modal__content">
           <div class="width width--xl">
@@ -39,35 +38,14 @@
           </div>
         </div>
       </div>
-      <!-- section video -->
-      <div class="modal modal--video is-closed" data-modal-id="video-{{section.id}}">
+    </div>
+    <!-- section video -->
+    <div class="modal__wrap is-closed" data-modal-id="video-{{section.id}}">
+      <div class="modal modal--vimeo">
         <div class="js-close-modal modal__close"></div>
-        <iframe src="https://player.vimeo.com/video/{{section.video.id}}" width="800" height="450" frameborder="0" allowfullscreen></iframe>
+        <div id="video-{{section.id}}" class="video__wrap" data-vimeo-url="{{section.video.url}}" data-vimeo-autoplay="true"></div>
       </div>
-    {% endfor %}
+    </div>
+  {% endfor %}
 
-    <!-- find all other modals for current page -->
-    {% assign modals = site.data.modals %}
-    {% for modal in modals %}
-      {% if modal.pages %}
-        {% for modal-page in modal.pages %}
-          {% if modal-page.id == page.id or modal-page.id == 'all' or modal-page.layout == page.layout %}
-
-            <!-- Load modal content depending on type -->
-            {% if modal.type == 'series' %}
-              {% include modal/content-series.html %}
-            {% elsif modal.type == 'youtube' %}
-              {% include modal/content-youtube.html %}
-            {% elsif modal.image %}
-              {% include modal/content-image.html %}
-            {% else %}
-              {% include modal/content.html %}
-            {% endif %}
-
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-    {% endfor %}
-
-  </div>
 </div>
