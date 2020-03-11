@@ -8,8 +8,8 @@
 
 - id: orange
   title: Orange
-  description: Orange has established itself as an enviable food and wine hotspot, where volcanic soils offer all manner of rich harvests. Acclaimed restaurants have been opening all across town, taking advantage of the flow of in-the-know foodies coming to sample the local wine. Alight at Orange F.O.O.D. Week or Winefest for a great introduction to all things Orange foodie.
-  drive-time: 3 hour
+  description: Orange has established itself as an enviable food and wine hotspot, where volcanic soils offer all manner of rich harvests. Acclaimed restaurants have been opening all across town, taking advantage of the flow of in-the-know foodies coming to sample the local wine. Arrive during Orange F.O.O.D. Week or Winefest for a great introduction to all things Orange foodie.
+  drive-time: 3.5 hour
   flight-time: 40 minute
   video:
     id: #
@@ -17,7 +17,7 @@
 
 - id: mudgee
   title: Mudgee
-  description: Mudgee is the in-the-know food and wine region that more and more switched-on travellers are heading for. Its historic obscurity has helped the town to retain an authentic identity, making it a relaxed spot where locals produce fine fare for your delectation. Stop in chic restaurants with seriously good food, before exploring the rolling vineyards that surround the town.
+  description: Mudgee is the in-the-know food and wine region that more and more switched-on travellers are heading to. Its pioneering history has helped the town to retain an authentic identity, making it a relaxed spot where locals produce fine fare for your delectation. Stop in chic restaurants for seriously good food, before exploring the rolling vineyards that surround the town.
   drive-time: 3.5 hour
   video:
     id: 390656008
@@ -33,7 +33,7 @@
 
 - id: southern-highlands
   title: Southern Highlands
-  description: South of Sydney lie the Southern Highlands, a small pocket of foodie delights and lush countryside and a hotspot for cellar-door tastings. Your base should be Bowral, where esteemed restaurants – notably Biota Dining – set you up for days exploring the region. Best seen by car, there are 63 vineyards and 17 cellar doors to discover, dispersed amongst rolling countryside and rainforest patches.
+  description: South of Sydney lies the Southern Highlands, a small pocket of foodie delights and lush countryside and a hotspot for cellar-door tastings. Your base should be Bowral, where esteemed restaurants – notably Biota Dining – set you up for days exploring the region. Best seen by car, there are 63 vineyards and 17 cellar doors to discover, dispersed amongst rolling hills and rainforest patches.
   drive-time: 1.5 hour
   video:
     id: 393373230
@@ -41,7 +41,7 @@
 
 - id: canberra-district
   title: Canberra District
-  description: This relatively untapped region stretches north from the cosmopolitan hub of Canberra, a much-talked-about wine region that’s had the critics reeling with excitement. The area has produced wine for decades, but in recent years it has really become a starlet of the wider region. Go for in-the-know tastings at up-and-coming cellar doors, whilst also tasting the vintages of some of the old guard.
+  description: This much-talked-about wine region stretches north from Canberra and has had the critics reeling with excitement. The area has produced wine for decades, but in recent years it has really become a starlet of the wider region. Go for in-the-know tastings at up-and-coming cellar doors, whilst also sampling the vintages of some of the old guard.
   drive-time: 3 hour
   video:
     id: 390618230
