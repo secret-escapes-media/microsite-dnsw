@@ -54,3 +54,11 @@
     color: $d-cyan;
   }
 }
+
+.play-icon {
+  display: inline-block;
+  margin-right: $s-5;
+  max-width: 25px;
+  line-height: 0;
+  transform: translateY(-1px);
+}
