@@ -34,9 +34,9 @@ $core-nav-padding-sm: 1rem;
 // ---------- NAV FOR CORE SE SITE ----------
 
 // the breakpoint for the core nav list to appear as the mobile nav
-$nav-list-bp: 870px;
+$nav-list-bp: 1020px;
 // the breakpoint for the logo to appear at the bottom of the mobile nav
-$logo-bp: 650px;
+$logo-bp: 950px;
 
 .core-nav {
   height: 100%;
@@ -86,8 +86,12 @@ $logo-bp: 650px;
   }
   &__client {
     text-align: right;
+    overflow: hidden;
     visibility: hidden;
-    @include bp($logo-bp) { visibility: visible; }
+    @include bp($logo-bp) {
+      overflow: visible;
+      visibility: visible;
+    }
   }
   &__list {
     display: none;

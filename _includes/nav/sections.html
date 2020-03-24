@@ -15,7 +15,7 @@
           <!-- loops through all sections within page -->
           {% for section in site.data.sections %}<span class="site-nav__item">
 
-            <a class="site-nav__link site-nav__link--{{section.id}}" href="#{{section.id}}">
+            <a id="track-nav-{{section.id}}" class="site-nav__link site-nav__link--{{section.id}}" href="#{{section.id}}">
               {% if section.nav-title %}
                 {{section.nav-title}}
               {% else %}
@@ -27,7 +27,7 @@
           {% if site.data.promo %}<span class="site-nav__item">
             <a class="site-nav__link site-nav__link--{{site.data.promo.id}}" href="#{{site.data.promo.id}}">{{site.data.promo.nav-title}}</a>
           </span>{% endif %}<span class="site-nav__item">
-            <a class="site-nav__link site-nav__link--offers" href="#offers">Offers</a>
+            <a id="track-nav-offers" class="site-nav__link site-nav__link--offers" href="#offers">Offers</a>
           </span>
       </div>
     </div>

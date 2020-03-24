@@ -49,13 +49,15 @@ function modalClose(event){
   if (isVideoModal) vimeoPlayer.pause();
 
   // set event listener after transition
-  activeModal.on('transitionend', function(){
-    modal.scrollTop(0); // reset scroll position
-    if (isVideoModal) {
-      vimeoPlayer.destroy(); // remove video player
-      vimeoPlayer = null; // reset variable for new players
+  $('.modal__bg').on('transitionend', function(e){
+    if (e.target === this) { // if transition is on .modal__bg element
+      modal.scrollTop(0); // reset scroll position
+      if (isVideoModal) {
+        vimeoPlayer.destroy(); // remove video player
+        vimeoPlayer = null; // reset variable for new players
+      }
+      $(this).off('transitionend'); // remove this event listener, only fires once
     }
-    $(this).off(); // remove this event listener
   });
 
   // hide modal

@@ -19,7 +19,7 @@
           <p class="text--xl">{{site.description}}</p>
           {% if page.primary-cta %}
             <div class="space--md">
-              <a href="{{page.primary-cta.link}}" class="btn btn--outline btn--outline-cyan">{{page.primary-cta.label}}</a>
+              <a id="track-intro-offers-btn" href="{{page.primary-cta.link}}" class="btn btn--outline btn--outline-cyan">{{page.primary-cta.label}}</a>
             </div>
           {% endif %}
         </div>
@@ -38,71 +38,73 @@
             </div>
           </div>
           <div class="container">
-            <div class="row row--valign-center row--gutters-lg row--xxl-6-6">
-              <div class="col">
-                <div class="content-spacing">
-                  <div class="title title--xxl">{{section.title}}</div>
-                  <p class="text--xxl">{{section.description}}</p>
+            <div class="section-wrap">
+              <div class="row row--valign-center row--gutters-lg row--xxl-6-6">
+                <div class="col">
+                  <div class="content-spacing">
+                    <div class="title title--xxl">{{section.title}}</div>
+                    <p class="text--xxl">{{section.description}}</p>
+                  </div>
+                  <div class="space--md"></div>
+                  {% if section.flight-time %}
+                    <div class="row row--6-6 row--gutters-sm">
+                      <div class="col">
+                        <div class="distance">
+                          <div class="distance__icon">
+                            <img src="{{site.img}}/icons/distance-plane.svg" alt="Airplane icon">
+                          </div>
+                          <div class="distance__text">
+                          {{section.flight-time}} flight from Sydney
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="distance">
+                          <div class="distance__icon">
+                            <img src="{{site.img}}/icons/distance-car.svg" alt="Car icon">
+                          </div>
+                          <div class="distance__text">
+                          {{section.drive-time}} drive from Sydney
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  {% else %}
+                    <div class="distance">
+                      <div class="distance__icon">
+                        <img src="{{site.img}}/icons/distance-car.svg" alt="Car icon">
+                      </div>
+                      <div class="distance__text">
+                      {{section.drive-time}} drive from Sydney
+                      </div>
+                    </div>
+                  {% endif %}
+                  <div class="space--lg"></div>
+                  <p class="text--center sub-title">Meet the winemaker</p>
+                  <div class="space--xs"></div>
+                  <div class="interview-card">
+                    <div class="row row--gutters-sm row--valign-center">
+                      <div class="col col--5">
+                        <div class="interview-card__image bg-img bg-img--circle" style="background-image: url('{{site.img}}/content/{{section.id}}/person.jpg')">
+                          <a id="track-interview-{{section.id}}-img" class="bg-img__link js-open-modal" data-open-modal="interview-{{section.id}}" href="#0"></a>
+                        </div>
+                      </div>
+                      <div class="col col--7">
+                        <h3 class="title title--sm">{{interview.name}}</h3>
+                        <p class="text--xl">{{interview.bio}}</p>
+                        <div class="space--xs"></div>
+                        <a id="track-{{section.id}}-interview-btn" class="js-open-modal btn btn--sm btn--cyan" data-open-modal="interview-{{section.id}}" href="#0">Read Interview</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="space--md"></div>
-                {% if section.flight-time %}
-                  <div class="row row--6-6 row--gutters-sm">
-                    <div class="col">
-                      <div class="distance">
-                        <div class="distance__icon">
-                          <img src="{{site.img}}/icons/distance-plane.svg" alt="Airplane icon">
-                        </div>
-                        <div class="distance__text">
-                        {{section.flight-time}} flight from Sydney
-                        </div>
-                      </div>
+                <div class="col">
+                  <div class="bg-img bg-img--1-1 bg-img--md-3-2 bg-img--xxl-1-1 video-thumbnail" style="background-image: url('{{site.img}}/content/{{section.id}}/video.jpg');">
+                    <a id="track-{{section.id}}-video-play" class="bg-img__link js-open-modal" data-open-modal="video-{{section.id}}" href="#0"></a>
+                    <div class="bg-img__bg-overlay"></div>
+                    <div class="bg-img__content">
+                      <img class="width--play-icon" src="{{site.img}}/icons/play.svg" alt="Play video icon">
                     </div>
-                    <div class="col">
-                      <div class="distance">
-                        <div class="distance__icon">
-                          <img src="{{site.img}}/icons/distance-car.svg" alt="Car icon">
-                        </div>
-                        <div class="distance__text">
-                        {{section.drive-time}} drive from Sydney
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                {% else %}
-                  <div class="distance">
-                    <div class="distance__icon">
-                      <img src="{{site.img}}/icons/distance-car.svg" alt="Car icon">
-                    </div>
-                    <div class="distance__text">
-                    {{section.drive-time}} drive from Sydney
-                    </div>
-                  </div>
-                {% endif %}
-                <div class="space--lg"></div>
-                <p class="text--center sub-title">Meet the winemaker</p>
-                <div class="space--xs"></div>
-                <div class="interview-card">
-                  <div class="row row--gutters-sm row--valign-center">
-                    <div class="col col--5">
-                      <div class="bg-img bg-img--circle" style="background-image: url('{{site.img}}/content/{{section.id}}/person.jpg')">
-                        <a class="bg-img__link js-open-modal" data-open-modal="interview-{{section.id}}" href="#0"></a>
-                      </div>
-                    </div>
-                    <div class="col col--7">
-                      <h3 class="title title--sm">{{interview.name}}</h3>
-                      <p class="text--xl">{{interview.bio}}</p>
-                      <div class="space--xs"></div>
-                      <a class="js-open-modal btn btn--sm btn--cyan" data-open-modal="interview-{{section.id}}" href="#0">Read Interview</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="bg-img bg-img--1-1 bg-img--md-3-2 bg-img--xxl-1-1 video-thumbnail" style="background-image: url('{{site.img}}/content/{{section.id}}/video.jpg');">
-                  <a class="bg-img__link js-open-modal" data-open-modal="video-{{section.id}}" href="#0"></a>
-                  <div class="bg-img__bg-overlay"></div>
-                  <div class="bg-img__content">
-                    <img class="width--play-icon" src="{{site.img}}/icons/play.svg" alt="Play video icon">
                   </div>
                 </div>
               </div>
