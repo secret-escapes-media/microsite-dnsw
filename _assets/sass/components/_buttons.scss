@@ -20,9 +20,9 @@
   &--cyan { background-color: $d-cyan;
     &:hover { background-color: $d-cyan-dark; }
   }
-  &--red { background-color: $dial-red;
-    &:hover { background-color: darken($dial-red, 10); }
-  }
+  // &--red { background-color: $dial-red;
+  //   &:hover { background-color: darken($dial-red, 10); }
+  // }
   &--outline {
     color: inherit;
     &:before {
