@@ -43,7 +43,8 @@
                 <div class="col">
                   <div class="content-spacing">
                     <div class="title title--xxl">{{section.title}}</div>
-                    <p class="text--xxl">{{section.description}}</p>
+                    <p class="text--xxl">{{section.description}} <a href="{{section.link}}" class="inline-link">Find out more...</a></p>
+                    <div class="space--sm"></div>
                   </div>
                   <div class="space--md"></div>
                   {% if section.flight-time %}
@@ -113,6 +114,18 @@
         </div>
       {% endfor %}
 
+    </div>
+
+    <div class="vpad--xxxxxl bg--img" style="background-color: #0d0e07 ;background-image: url('{{site.img}}/content/end-section/bg.jpg');">
+      <div class="container">
+        <div class="width width--xl text--white text--center">
+          <div class="title title--xxl">It doesn’t end there...</div>
+          <div class="space--xs"></div>
+          <p class="width width--lg text--normal text--xxl">There’s even more to discover in New South Wales’ wine regions. Head to visitnsw.com to find out more.</p>
+          <div class="space--md"></div>
+          <a href="https://www.visitnsw.com/things-to-do/food-and-drink/drink/wine-regions-in-nsw" class="btn btn--cyan btn--lg">Visit visitnsw.com</a>
+        </div>
+      </div>
     </div>
 
     {% include page/footer.html %}
