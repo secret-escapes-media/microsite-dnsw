@@ -84,18 +84,16 @@
                   <p class="text--center sub-title">Meet the winemaker</p>
                   <div class="space--xs"></div>
                   <div class="interview-card">
-                    <div class="row row--gutters-sm row--valign-center">
-                      <div class="col col--5">
-                        <div class="interview-card__image bg-img bg-img--circle" style="background-image: url('{{site.img}}/content/{{section.id}}/person.jpg')">
-                          <a id="track-interview-{{section.id}}-img" class="bg-img__link js-open-modal" data-open-modal="interview-{{section.id}}" href="#0"></a>
-                        </div>
-                      </div>
-                      <div class="col col--7">
-                        <h3 class="title title--sm">{{interview.name}}</h3>
-                        <p class="text--xl">{{interview.bio}}</p>
-                        <div class="space--xs"></div>
-                        <a id="track-{{section.id}}-interview-btn" class="js-open-modal btn btn--sm btn--cyan" data-open-modal="interview-{{section.id}}" href="#0">Read Interview</a>
-                      </div>
+                    <div class="interview-card__image" style="background-image: url('{{site.img}}/content/{{section.id}}/person.jpg')">
+                      <a id="track-interview-{{section.id}}-img" class="interview-card__link js-open-modal" data-open-modal="interview-{{section.id}}" href="#0"></a>
+                    </div>
+                    <div class="interview-card__text">
+                      <h3 class="title title--xs">{{interview.name}}</h3>
+                      <p>{{interview.bio}}</p>
+                      <div class="space--xs"></div>
+                      <p class="text--xl quote"><span>“</span>{{interview.pull-quote}}<span>”</span></p>
+                      <div class="space--sm"></div>
+                      <a id="track-{{section.id}}-interview-btn" class="js-open-modal btn btn--sm btn--cyan" data-open-modal="interview-{{section.id}}" href="#0">Read Interview</a>
                     </div>
                   </div>
                 </div>
